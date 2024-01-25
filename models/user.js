@@ -19,7 +19,6 @@ const UserSchema = new Schema({
 const User = models.User || model("User", UserSchema);
 
 export default User;
-
 /*The models object is provided by the mongoose
 library and stores all the registered models.
 If a model named "User" already exists in the "models"

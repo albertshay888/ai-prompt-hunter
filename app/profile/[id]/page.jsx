@@ -32,3 +32,4 @@ const UserProfile = ({ params }) => {
 };
 
 export default UserProfile;
+
