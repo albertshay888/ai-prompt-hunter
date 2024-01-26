@@ -3,9 +3,9 @@ import Feed from "@components/Feed";
 const Home = () => (
   <section className='w-full flex-center flex-col'>
     <h1 className='head_text text-center'>
-      Explore & Share
+      Explore & Exchange
       <br className='max-md:hidden' />
-      <span className='blue_gradient text-center'> AI-Powered Prompts</span>
+      <span className='blue_gradient text-center'> AI-Driven Prompts</span>
     </h1>
     <p className='desc text-center'>
       
