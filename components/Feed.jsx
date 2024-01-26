@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import PromptCard from "./PromptCard";
-import { Suspense } from "next/react";
+
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
     <div className="mt-16 prompt_layout">
@@ -66,12 +66,11 @@ const Feed = () => {
         onChange={handleSearchChange}
         className="search_input peer"
       />
-      <Suspense>
+      {/* </form> */}
       <PromptCardList
         data={searchText ? searchPostData : posts}
         handleTagClick={handleTagClick}
       />
-      </Suspense>
     </section>
   );
 };
