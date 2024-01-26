@@ -30,9 +30,9 @@ const Feed = () => {
       setSearchPostData(
         posts.filter(
           (post) =>
-            post.prompt.toLowerCase().includes(search.toLowerCase()) ||
-            post.tag.toLowerCase().includes(search.toLowerCase()) ||
-            post.creator.username.toLowerCase().includes(search.toLowerCase())
+            post?.prompt?.toLowerCase()?.includes(search?.toLowerCase()) ||
+            post?.tag?.toLowerCase()?.includes(search?.toLowerCase()) ||
+            post?.creator?.username?.toLowerCase()?.includes(search?.toLowerCase())
         )
       );
     }
